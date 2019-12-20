@@ -278,7 +278,7 @@ void printFeatures(const std::string geoType, const std::vector<std::string>& fe
 	    output += f;
 	    output += ',';
 	}
-	if (output.back() == ',') {
+	if (!output.empty() && output.back() == ',') {
         output.back() = ' ';
     }
 
